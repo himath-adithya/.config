@@ -1,0 +1,56 @@
+theme = "gruvbox_black"
+
+[editor]
+color-modes = true
+line-number = "relative"
+auto-completion = true
+completion-timeout = 5
+gutters = ["line-numbers", "spacer", "diagnostics", "spacer"]
+bufferline = "never"
+true-color = true
+mouse = false
+rulers = [120]
+scrolloff = 0
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "bar"
+select = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["separator", "file-base-name", "separator", "spacer", "file-modification-indicator"]
+right = [
+"diagnostics", "separator", "spacer", "position-percentage", "spacer", "separator", "position"
+]
+
+mode.normal = "𝙉 |"
+mode.insert = "𝙄 |"
+mode.select = "𝙑 |"
+
+[editor.lsp]
+enable = true
+display-messages = true
+
+[editor.indent-guides]
+render = true
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.normal]
+# newer ones
+A-q = ":buffer-close"
+A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-j = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
+C-k = ["move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up"]
+# rebindings
+L = "goto_next_buffer"
+H = "goto_previous_buffer"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
+X = "extend_line_above"
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]

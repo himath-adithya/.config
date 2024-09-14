@@ -1,0 +1,21 @@
+inherits = "gruvbox_dark_hard"
+
+"ui.background" = "black"
+"ui.statusline" = "#dfd9b7"
+"ui.statusline.inactive" = "#635c55"
+"ui.statusline.normal" = { bg = "#000000", fg = "#83a598"}
+"ui.statusline.insert" = { bg = "#000000", fg = "#b8bb26"}
+"ui.statusline.select" = { bg = "#000000", fg = "#fe8019"}
+"ui.cursor.primary" = "#83a598"
+"ui.help" = "#dfd9b7"
+"ui.popup" = "#c6c6c6"
+"ui.popup.info" = "#dfd9b7"
+"ui.window" = "#e5dbb7"
+"ui.text" = "#e5dbb7"
+"ui.text.focus" = "#c6c6c6"
+"ui.text.info" = "#dfd9b7"
+# "ui.menu" = { fg = "#dfd9b7", bg = "#212323" }
+"ui.menu" = { fg = "#dfd9b7", bg = "#000000" }
+"ui.menu.selected" = { fg = "#b8bb26", bg = "#2a2a2a"}
+"ui.selection.primary" = { bg = "#3c383600" }
+"comment.line" = { fg = "#8d8376" }
