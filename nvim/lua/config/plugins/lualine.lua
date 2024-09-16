@@ -9,18 +9,14 @@ return {
     gruvbox.insert.c.bg = "#000000"
     gruvbox.command.c.bg = "#000000"
     gruvbox.visual.c.bg = "#000000"
-
-    gruvbox.normal.a.fg = "#000000"
-    gruvbox.insert.a.fg = "#000000"
-    gruvbox.command.a.fg = "#000000"
-    gruvbox.visual.a.fg = "#000000"
+    gruvbox.replace.c.bg = "#000000"
 
     gruvbox.normal.a.bg = "#83a598"
     gruvbox.insert.a.bg = "#d3869b"
 
     require("lualine").setup({
       options = {
-        icons_enabled = true,
+        icons_enabled = false,
         theme = 'auto',
         component_separators = { left = '\\', right = '/' },
         section_separators = { left = '', right = '' },
@@ -38,18 +34,20 @@ return {
         }
       },
       sections = {
-        lualine_a = { 'mode' },
+        lualine_a = {
+          'mode',
+      },
         lualine_b = {
-          'branch',
           {
             'filename',
             symbols = {
               modified = ' ',
-              readonly = ' ',
-              unnamed = '[No Name]',
-              newfile = '[New]'
+              readonly = ' ',
+              unnamed = '❪new-❫',
+              newfile = '❪new-❫'
             },
           },
+          'branch',
         },
         lualine_c = {},
         lualine_x = {},

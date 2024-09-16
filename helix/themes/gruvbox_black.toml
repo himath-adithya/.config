@@ -14,8 +14,7 @@ inherits = "gruvbox_dark_hard"
 "ui.text" = "#e5dbb7"
 "ui.text.focus" = "#c6c6c6"
 "ui.text.info" = "#dfd9b7"
-# "ui.menu" = { fg = "#dfd9b7", bg = "#212323" }
 "ui.menu" = { fg = "#dfd9b7", bg = "#000000" }
 "ui.menu.selected" = { fg = "#b8bb26", bg = "#2a2a2a"}
-"ui.selection.primary" = { bg = "#3c383600" }
+"ui.selection.primary" = { bg = "#3c3836" }
 "comment.line" = { fg = "#8d8376" }

@@ -3,7 +3,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     lazy = false,
     priority = 1000,
-    config = function ()
+    config = function()
       require("gruvbox").setup({
         terminal_colors = true,
         undercurl = true,
@@ -23,7 +23,9 @@ return {
         inverse = true,
         contrast = "hard",
         palette_overrides = {},
-        overrides = {},
+        overrides = {
+          CursorLineNr = { bg = "#000000" },
+        },
         dim_inactive = false,
         transparent_mode = true,
       })
